@@ -1,0 +1,27 @@
+Date: 210711
+Experiment: H2O. alpha=[10 14], var_weight=1e-4, grad=True
+Takeaway: 
+    - Some didn't finish
+    - Sqaured norm near 1e-8. Not low enough. 
+
+Date: 210724
+Experiment: H2O. alpha=[10 14], var_weight=1e-7, grad=True
+Takeaway:
+    - Squared norm near 1e-9. Try lower 
+
+Date: 210725 
+Experiment: H2O. alpha=[10 14], var_weight=1e-9, grad=True, maxiter=23000  
+Takeaway:
+    - Variance becomes worse. Try higher var_weight. 
+    - L1 norm near 1e-05. Continue. 
+
+Date: 210726
+Experiment: H2O. alpha=[10 16], var_weight=1e-7, grad=True, maxiter=30000
+Takeaway:
+    - Same as lih 
+
+# Updating VCSA to have GCSA after to deal w/ norm 
+Date: 210727 
+Experiment: H2O. alpha=[10 16], var_weight=1e-2, grad=True, maxiter=30000, reload=False 
+Takeaway:
+    - All horrible HF->FCI. Why? 

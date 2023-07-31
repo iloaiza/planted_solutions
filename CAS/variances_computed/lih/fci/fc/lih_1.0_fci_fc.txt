@@ -1,0 +1,8 @@
+Molecule: lih
+Wavefucntion: fci
+Geometries: 1.0
+Method: fc
+
+FC parts - H_bk: 0
+Sum over sqrt: 1.0090720552267367
+

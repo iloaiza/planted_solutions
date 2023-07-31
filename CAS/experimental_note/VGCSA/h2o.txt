@@ -1,0 +1,21 @@
+Date: 210621 
+Experiment: H2O. gd_step=[20 24], final_alpha=10, vw=0.05 
+Takeaway:
+    - Best ngd=24, 16.3 -> 45.2 
+    - Try higher greedy steps. 
+
+Date: 210622 
+Experiment: H2O. gd_step=[25 29], final_alpha=10, vw=0.05 
+Takeaway: 
+    - Best ngd=26, 16.0 -> 44.7 
+    - Stopped trying. 
+
+# After updating. Now GCSA at the end. 
+Date: 210727
+Experiment: H2O. num_vgsteps=30, var_weight=[0.5, 0.1, 0.05]
+Takeaway: 
+    - var_weight = 0.1 works the best. 
+        But since other use var_weight = 0.5, we'll use the same var_weight 
+    - Looks okay. Optimal metric 46.2 lower than PGCSA. 
+
+    

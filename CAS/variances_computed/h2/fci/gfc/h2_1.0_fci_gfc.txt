@@ -1,0 +1,8 @@
+Molecule: h2
+Wavefucntion: fci
+Geometries: 1.0
+Method: gfc
+
+GFC parts - H_bk: (0.32760818967480887+0j) []
+Sum over sqrt: 0.3693893228674857
+

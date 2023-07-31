@@ -1,0 +1,5 @@
+Date: 210722 
+Experiment: Parallelizing CSA functions 
+Takeaway:
+    - Parallelizing sum_cartans has no benefit. Linear in alpha don't seem worth it. 
+    - Even N^2 is not worth it. Only case of it being worth it is O(N^4) parallelized

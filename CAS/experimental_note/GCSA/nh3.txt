@@ -1,0 +1,14 @@
+Date: 210621 
+Experiment: NH3. gd_step=[20 24], final_alpha=10 
+Takeaway: 
+    - Didn't finish. Try higher final_alpha. 
+
+Date: 210622 
+Experiment: NH3. gd_step=[20 24], final_alpha=12 
+Takeaway:
+    - Best ngd=21, 19.4 -> 47.76 
+    - CSA norm still near 1e-04. Try higher greedy steps. 
+
+Date: 210623 
+Experiment: NH3. gd_step=[25 29], final_alpha=12 
+Takeaway:

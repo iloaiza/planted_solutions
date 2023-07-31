@@ -1,0 +1,43 @@
+Date: 210621 
+Experiment: LiH. alpha=[8 12], var_weight=0.05 
+Takeaway:
+    - Didn't finish. Try higher alpha. 
+
+Date: 210622 
+Experiment: LiH. alpha=[13 17], var_weight=0.05 
+Takeaway: 
+    - alpha=16 finish but norm is non-zero 
+    - Most didn't finish. 
+    - Try same alpha but lower var_weight
+
+Date: 210711
+Experiment: LiH. alpha=[10 14], var_weight=1e-4, grad=True
+Takeaway: 
+    - Squared norm near 1e-8. Not low enough 
+
+Date: 210724
+Experiment: LiH. alpha=[10 14], var_weight=1e-6, grad=True
+Takeaway:
+    - Squared norm near 1e-11. Try lower 
+
+Date: 210725 
+Experiment: LiH. alpha=[10 14], var_weight=1e-7, grad=True, maxiter=40000 
+Takeaway:
+    - L1 norm near 1e-05. Continue but next time try lower var_weight to go for 2.5e-06 
+
+Date: 210726
+Experiment: LiH. alpha=[10 14], var_weight=1e-7, grad=True, maxiter=40000, reload=True 
+Takeaway:
+    - L1 norm not good enough. Doesn't seem like there's a way to balance var_weight and norm 
+
+# Updating VCSA to have GCSA after to deal w/ norm 
+Date: 210727 
+Experiment: LiH. alpha=[10 14], var_weight=1e-2, grad=True, maxiter=40000, reload=False
+Takeaway:
+    - alpha=10 performs the best. HF metric: 0.660 
+    - Not much difference between alpha. 
+    - FCI metric much higher than HF metric. ~4.00 for alpha=10
+    - alpha=11. HF->FCI: 0.66 -> 2,77 (Saved)
+    - alpha=12. HF->FCI: 0.66 -> 9.82 
+    - alpha=13. HF->FCI: 0.66 -> 61.8
+    - Almost all horrible HF->FCI. Why? 

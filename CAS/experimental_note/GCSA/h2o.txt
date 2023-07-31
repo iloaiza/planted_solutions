@@ -1,0 +1,24 @@
+Date: 210616 
+Experiment: H2O. gd_step=[10 14], final_alpha=8 
+Takeaway:
+    - Didn't converge. Try higher final_alpha. 
+
+Date: 210617 
+Experiment: H2O. gd_step=range[10 14], final_alpha=10
+Takeaway:
+    - Best ngd=12. 20.1 -> 51.0 
+    - 1e-04 HF variances still exist. Do more greedy steps. 
+
+Date: 210618
+Experiment: H2O. gd_step=range[15 19], final_alpha=10
+Takeaway:
+    - Best also 20.1 -> 51.0. Not much better. Keep earlier one. 
+    - 1e-04 HF variances still exist
+    - Norm ends at 1e-05. Need more greedy steps to get 1e-06. 
+
+Date: 210619
+Experiment: H2O. gd_step=range[20 24], final_alpha=10
+Takeaway:
+    - Best ngd=21. 19.3 -> 49.8
+    - 1e-05 HF variances for the final step. 
+    - Norm after greedy almost at 1e-06. Stop trying higher greedy steps.  

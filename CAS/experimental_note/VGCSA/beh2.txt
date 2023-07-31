@@ -1,0 +1,39 @@
+Date: 210530 
+Experiment: BeH2. gd_step=range[2, 6], final_alpha=10, var_weight=0.05
+Takeaway: 
+    - The last gd_step=6 performs quite well. FCI optimal metric: 1.95 slightly higher than 1.86 of SVD. 
+    - Use more greedy steps, try less fragments
+
+Date: 210531 
+Experiment: BeH2. gd_step=range[7, 12], final_alpha=9, var_weight=0.05
+Takeaway: 
+    - A few runs failed for unknown reasons. Unreadable error in slurm output file. 
+    - 9 fragments dont seem to be enough 
+    - Use more greedy steps, try 10 fragments
+
+Date: 210601
+Experiment: BeH2. gd_step=range[7, 12], final_alpha=10, var_weight=0.05
+Takeaway:
+    - ngd=10 performs the best. HF 0.59 -> FCI 1.26. Beats GCSA! 
+    - 10 fragments are enough consistently. 
+    - Use more greedy steps 
+
+Date: 210602 
+Experiment: BeH2. gd_step=range[13, 19], final_alpha=10, var_weight=0.05    
+Takeaway:
+    - Best ngd=19. HF 0.47 -> FCI 1.09 
+    - Try higher greedy steps and var_weight
+
+Date: 210603 
+Experiment: BeH2. gd_step=range[20, 24], final_alpha=10, var_weight=0.1 
+Takeaway: 
+    - Measurement cost decreases by a little. 
+    - Best ngd=23, HF 0.423 -> FCI 1.016 
+
+# After updating. Now GCSA at the end. 
+Date: 210727
+Experiment: BeH2. num_vgsteps=30, var_weight=[0.5, 0.1, 0.05]
+Takeaway: 
+    - var_weight = 0.5 works the best. 
+    - Looks okay. Optimal metric 0.851 lower than PGCSA. 
+    

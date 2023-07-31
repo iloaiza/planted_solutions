@@ -1,0 +1,119 @@
+\documentclass{article}
+
+\newcommand{\eq}[1]{Eq.~(\ref{#1})} %
+\newcommand{\sparen}[1]{\bigl(#1\bigr)} %
+\newcommand{\mparen}[1]{\bigl[#1\bigr]} %
+\newcommand{\fracpar}[2]{\frac{\partial #1}{\partial #2}} %
+\newcommand{\fracd}[2]{\frac{d #1}{d #2}} %
+\usepackage{amsmath} %
+\usepackage{times} %
+\usepackage{enumitem} %
+\usepackage{hyperref} %
+\usepackage{float} %
+\usepackage{graphicx} %
+\usepackage{tabularx} %
+\usepackage[dvipsnames,table]{xcolor} %
+\usepackage{listings} %
+\lstset{ frame=single, 
+ language=Python, 
+ breaklines=true,
+ basicstyle={\small\itshape},
+ numberstyle=\color{purple},
+ keywordstyle=\color{red},
+ stringstyle=\color{blue},
+}
+\usepackage{booktabs} %
+\hypersetup{
+    colorlinks = true,
+    linkcolor = magenta,
+} %
+\def\be{\begin{equation}} %
+\def\ee{\end{equation}} %
+\def\bea{\begin{eqnarray}} %
+\def\eea{\end{eqnarray}} %
+
+\begin{document}
+    \begin{table}[h]%
+        \setlength\tabcolsep{0pt}
+        \caption{Groupings of full Hamiltonain (1 and 2 body terms).} 
+        {\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}} l l l l l l l }
+        \toprule
+        %  \hline\hline
+        Systems & $N$   & Total & QWC   & FC    & SVD   & CSA \\
+        % \hline
+        \midrule
+        H$_2$   & 4     & 15    & 3     & 2     & 4     & 3 \\
+        LiH     & 12    & 631   & 142   & 36    & 22    & 9 \\
+        BeH$_2$ & 14    & 666   & 172   & 35    & 29    & 13\\
+        H$_2$O  & 14    & 1086  & 313   & 55    & 28    & 11 \\
+        NH$_3$  & 16    & 3609  & 1272  & 153   & 37    & 13\\
+        \bottomrule
+        %\hline\hline
+        \end{tabular*} 
+        }
+        \label{tab:result}
+    \end{table}
+
+    \begin{table}[h]%
+        \setlength\tabcolsep{0pt}
+        \caption{HF $\sum_i \sqrt{var_i} $} 
+        {\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}l l l l l l l l }
+            \toprule
+            %  \hline\hline
+            Systems & H     & QWC   & FC    & SVD   & CSA & GCSA & VCSA \\
+            % \hline
+            \midrule
+            H$_2$   & 0.197 & 0.197 & 0.197 & 0.197 & 0.197 & 0.197 & 0.197 \\
+            LiH     & 0.141 & 1.857 & 0.895 & 1.929 & 5.537 & 1.850 & 1.581 \\
+            BeH$_2$ & 0.218 & 3.164 & 1.876 & 1.338 & 4.944 & 1.135 & ... \\
+            H$_2$O  & 0.323 & 9.276 & 5.701 & 8.877 & 20.749 & 8.268 & ... \\
+            NH$_3$  & 0.364 & 15.531 & 5.796 & 8.734 & 21.194 & ... & ... \\
+            \bottomrule
+            %\hline\hline
+            \end{tabular*} 
+        }
+        \label{tab:result}
+    \end{table}
+
+    \begin{table}[h]%
+        \setlength\tabcolsep{0pt}
+        \caption{FCI $\sum_i \sqrt{var_i} $} 
+        {\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}l l l l l l l}
+            \toprule
+            %  \hline\hline
+            Systems & QWC   & FC    & SVD   & CSA & GCSA & VCSA\\
+            % \hline
+            \midrule
+            H$_2$   & 0.369 & 0.369 & 0.370 & 0.351 & 0.369 & 0.369 \\
+            LiH     & 2.416 & 1.196 & 1.778 & 5.335 & 1.731 & 1.634 \\
+            BeH$_2$ & 3.713 & 2.277 & 1.365 & 4.964 & 1.213 & ... \\
+            H$_2$O  & 11.560 & 6.806 & 7.647 & 19.716 & ... & ...\\
+            NH$_3$  & 18.735 & 6.151 & 7.620 & ... & ... & ... \\
+            \bottomrule
+            %\hline\hline
+            \end{tabular*} 
+        }
+        \label{tab:result}
+    \end{table}
+
+    \begin{table}[h]%
+        \setlength\tabcolsep{0pt}
+        \caption{Energies} 
+        {\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}l l l}
+            \toprule
+            %  \hline\hline
+            Systems & HF    & FCI   \\
+            % \hline
+            \midrule
+            H$_2$   & -1.0661& -1.1012 \\
+            LiH     & -7.7673 & -7.7845 \\
+            BeH$_2$ & -15.4557 & -15.4817 \\
+            H$_2$O  & -74.9630 & -75.0177 \\
+            NH$_3$  & -55.4523 & ... \\
+            \bottomrule
+            %\hline\hline
+            \end{tabular*} 
+        }
+        \label{tab:result}
+    \end{table}
+\end{document}

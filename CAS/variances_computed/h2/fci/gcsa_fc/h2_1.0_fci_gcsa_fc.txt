@@ -1,0 +1,11 @@
+Molecule: h2
+Wavefucntion: fci
+Geometries: 1.0
+Method: GCSA_FC
+Qubit Transformation: BK
+
+[3.07964373e-02 3.41121180e-02 8.47416760e-05]
+GCSA_FC parts - H_BK: 0
+sum_i <H_i>: -1.1011503302326335
+Sum over sqrt: 0.3693893228674591
+

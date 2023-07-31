@@ -1,0 +1,25 @@
+86400 seconds per 24 hr 
+
+Date: 210711
+Experiment: LiH, alpha=16, total_iter=10 
+Takeaway:
+    - On average, 2 secs per iteration
+    - max 35000 iterations 
+
+Date: 210711
+Experiment: BeH2, alpha=16, total_iter=10 
+Takeaway:
+    - On average, 3 secs per iteration
+    - max 23000 iterations
+
+Date: 210711
+Experiment: H2O, alpha=16, total_iter=10 
+Takeaway:
+    - On average, 3 secs per iteration
+    - max 23000 iterations
+
+Date: 210711
+Experiment: NH3, alpha=16, total_iter=10 
+Takeaway:
+    - On average, 9 secs per iteration
+    - max 7500 iterations

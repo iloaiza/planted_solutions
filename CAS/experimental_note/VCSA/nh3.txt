@@ -1,0 +1,28 @@
+Date: 210711
+Experiment: NH3. alpha=[12 16], var_weight=1e-5, grad=True 
+Takeaway: 
+    - Some didn't finish
+    - Squared norm near 1e-8. Not low enough. 
+
+Date: 210724
+Experiment: NH3. alpha=[12 16], var_weight=1e-7, grad=True
+Takeaway:
+    - Lower than alpha=14 didnt converge. 
+    - Still near 1e-10 norm. Try lower weight
+
+Date: 210725 
+Experiment: NH3. alpha=[14 18], var_weight=1e-9, grad=True, maxiter=7500  
+Takeaway:
+    - var_weight is too low 
+
+Date: 210726 
+Experiment: NH3. alpha=[14 20], var_weight=1e-7, grad=True, maxiter=10000  
+Takeaway:
+    - Same as lih 
+
+# Updating VCSA to have GCSA after to deal w/ norm 
+Date: 210727 
+Experiment: NH3. alpha=[14 20], var_weight=1e-2, grad=True, maxiter=9000, reload=False 
+Takeaway:
+    - All horrible HF->FCI. Why? 
+    

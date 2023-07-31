@@ -1,0 +1,19 @@
+Date: 210616 
+Experiment: LiH. gd_step=[10 14], final_alpha=8 
+Takeaway:
+    - gd=12 the best. 1.06 - > 2.76
+
+Date: 210617 
+Experiment: LiH. gd_step=range[15, 19], final_alpha=8
+Takeaway:
+    - gd=15 the best. 0.983 -> 2.66 
+    - After greedy step norm near 1e-06, HF variances also near 1e-06. 
+        Maybe this is a good stopping point for greedy algorithms. 
+    - Try higher gd_step
+
+Date: 210618 
+Experiment: LiH. gd_step=range[20, 24], final_alpha=8
+Takeaway: 
+    - No significant differences anymore. HF variances near 1.0* 
+    - TBT norm near 1e-07 after greedy. HF variances of parts near 1e-7 as well. 
+    - Don't expect improvements. Stopped running. 

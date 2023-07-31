@@ -1,0 +1,38 @@
+(qchem2) michi@Michi test % python time_variance_comp.py h2
+Molecule: h2
+Wavefunction: fci
+Time taken to obtain wfs: 0.0 min
+Time taken to obtain operator from tbt: 0.0 min
+Time taken to obtain variance with operator and wfs: 0.0 min
+(qchem2) michi@Michi test % python time_variance_comp.py h2
+Molecule: h2
+Wavefunction: fci
+Time taken to obtain wfs: 0.0 min
+Time taken to obtain operator from tbt: 0.0 min
+Time taken to obtain variance with operator and wfs: 0.0 min
+(qchem2) michi@Michi test % python time_variance_comp.py lih
+Molecule: lih
+Wavefunction: fci
+Time taken to obtain wfs: 0.02 min
+Time taken to obtain operator from tbt: 0.0 min
+Time taken to obtain variance with operator and wfs: 0.06 min
+(qchem2) michi@Michi test % python time_variance_comp.py h2o
+Molecule: h2o
+Wavefunction: fci
+Time taken to obtain wfs: 0.07 min
+Time taken to obtain operator from tbt: 0.0 min
+Time taken to obtain variance with operator and wfs: 0.21 min
+(qchem2) michi@Michi test % python time_variance_comp.py beh2
+Molecule: beh2
+Wavefunction: fci
+Time taken to obtain wfs: 0.04 min
+Time taken to obtain operator from tbt: 0.0 min
+Time taken to obtain variance with operator and wfs: 0.21 min
+(qchem2) michi@Michi test % python time_variance_comp.py nh3 
+Molecule: nh3
+Wavefunction: fci
+Time taken to obtain wfs: 0.77 min
+Time taken to obtain operator from tbt: 0.0 min
+Time taken to obtain variance with operator and wfs: 1.43 min
+
+### Roughly the same using HF. Conclusion: Save variance results. 

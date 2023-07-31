@@ -1,0 +1,50 @@
+Date: 210528 
+Experiment: LiH. gd_step=[2 3 4], final_alpha=8, var_weight=0.05
+Takeaway: 
+    - 8 CSA fragments are enough for the remainder. 
+    - HF variance is still spread evenly. Try more greedy steps. 
+    - The gd_step=2 experiment had 1.5 HF metric value but jumped to ~3 ish with FCI. Maybe HF won't be as good. 
+    - None is competitive against GCSA_FC yet. 
+
+Date: 210530 
+Experiment: LiH. gd_step=range[5, 10], final_alpha=7, var_weight=0.05
+Takeaway: 
+    - 7 CSA fragments are not enough for the remainder. 
+    - Each calculation takes ~7hr 
+    - HF variance skyrocketed probably b/c the last step couldn't converge without going to greater coefficients 
+    - Try 8 CSA fragments again with more greedy steps 
+
+Date: 210531
+Experiment: LiH. gd_step=range[5, 10], final_alpha=8, var_weight=0.05
+Takeaway: 
+    - 8 CSA fragments are consistently enough.  
+    - The best, ngd=9. HF metric 0.874 -> FCI 2.50
+    - The second best, ngd=5. HF metric 1.02 -> FCI 2.66
+    - Try the one that failed to converge, and higher gd steps
+
+Date: 210601
+Experiment: LiH. gd_step=range[6, 7, 8, 10, 11, 12, 13], final_alpha=8, var_weight=0.05
+Takeaway: 
+    - The best ngd=13. HF 0.800 -> FCI 2.377. 
+    - ngd=12 didn't converge. 
+    - Try higher gd steps & higher var_weight
+
+Date: 210602 
+Experiment: LiH. gd_step=range[14, 20], final_alpha=8, var_weight=0.1
+Takeaway: 
+    - The best ngd=14. HF 0.725 -> 2.256 
+    - Seems to have steady decrease. Try higher gd_step & var_weight. 
+
+Date: 210603 
+Experiment: LiH. gd_step=range[21, 25], final_alpha=8, var_weight=0.2 
+Takeaway: 
+    - Nothing is better. Try again with original var_weight, 
+
+# After updating. Now GCSA at the end. 
+# 210726 skipped. There was an bug in VCSA OPT. 
+Date: 210727
+Experiment: LiH. num_vgsteps=30, var_weight=[0.5, 0.1, 0.05]
+Takeaway: 
+    - var_weight = 0.5 works the best. 
+    - Looks okay. Optimal metric 2.26 lower than PGCSA. 
+    

@@ -1,0 +1,6 @@
+Date: 210616 
+Experiment: Compute expected time needed to compute the expectation values of all 4-rank tensors. 
+Takeaway:
+    - LiH, H2O's expected times calculated are within 2-hours to actual time. Pretty good. 
+    - NH3's expected time is: 63.54 hrs
+    - Do the stupid way to do separate calculations. 

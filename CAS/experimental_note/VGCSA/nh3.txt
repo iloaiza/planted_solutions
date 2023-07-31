@@ -1,0 +1,33 @@
+Date: 210621 
+Experiment: NH3. gd_step=[20 24], final_alpha=11, vw=0.05
+Takeaway: 
+    - Didn't finish. Try higher final_alpha. 
+
+Date: 210622 
+Experiment: NH3. gd_step=[20 24], final_alpha=12, vw=0.05 
+Takeaway: 
+    - Didn't finish
+    - Try lower greedy steps. 
+
+Date: 210623 
+Experiment: NH3. gd_step=[10 14], final_alpha=12, vw=0.05 
+Takeaway:
+    - LBFGSB was used. 
+    - Best ngd=14. 19.7 -> 48.9 
+    - Try higher greedy steps 
+
+Date: 210625 
+Experiment: NH3. gd_step=[15 19], final_alpha=12, vw=0.05 
+Takeaway:
+    - Most Doesn't finish
+    - Best ngd=15, 17.5 -> 45.3
+    - Check timer. 
+
+# After updating. Now GCSA at the end. 
+Date: 210727
+Experiment: NH3. num_vgsteps=30, var_weight=[0.5, 0.1, 0.05]
+Takeaway: 
+    - var_weight = 0.05 works the best. 
+        But since other use var_weight = 0.5, we'll use the same var_weight 
+    - Looks okay. Optimal metric 42.2 lower than PGCSA. 
+    

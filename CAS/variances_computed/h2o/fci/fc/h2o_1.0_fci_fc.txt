@@ -1,0 +1,8 @@
+Molecule: h2o
+Wavefucntion: fci
+Geometries: 1.0
+Method: fc
+
+FC parts - H_bk: 0
+Sum over sqrt: 5.0957260014781935
+

@@ -1,0 +1,16 @@
+System: h2
+
+Number of orbitals: 4
+
+Google's method gives
+[0.63079318 0.19679058 0.00894344]
+Google's count 3
+All eigenvalues: 
+[ 6.30793181e-01  1.96790583e-01  8.94344201e-03 -2.71059163e-32]
+Reproduced Google's result: 
+[0.63079318 0.19679058 0.00894344]
+Reproduced Google's count 3
+
+Number of Pauli words (BK): 15
+Number of qwc cliques (using LF): 3
+Number of commuting cliques (using LF): 2

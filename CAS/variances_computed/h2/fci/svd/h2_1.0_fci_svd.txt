@@ -1,0 +1,8 @@
+Molecule: h2
+Wavefucntion: fci
+Geometries: 1.0
+Method: svd
+
+SVD parts - H_fermionic: 0
+Sum over sqrt: 0.36965411053796693
+

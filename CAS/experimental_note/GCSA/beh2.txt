@@ -1,0 +1,23 @@
+Date: 210616 
+Experiment: BeH2. gd_step=range[20, 24], final_alpha=10
+Takeaway:
+    - gd=23 the best. 0.699 -> 1.39
+
+Date: 210617 
+Experiment: BeH2. gd_step=range[15, 19], final_alpha=10
+Takeaway:
+    - Nothing is better. 
+    - Try final_alpha=9
+
+Date: 210618
+Experiment: BeH2. gd_step=range[15, 19], final_alpha=9
+Takeaway:
+    - Need final_alpha=10 
+
+Date: 210619
+Experiment: BeH2. gd_step=range[15, 19], final_alpha=10
+Takeaway:
+    - gd=16 the best. 0.668 -> 1.34 
+    - HF variance for final csa step & norm after greedy near 1e-06. 
+    - Stop increasing greedy steps. 
+    

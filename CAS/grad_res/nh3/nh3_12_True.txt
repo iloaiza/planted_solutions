@@ -1,0 +1,6 @@
+Mol: nh3
+Number of spin-orbitals: 16
+Alpha: 12
+Remaining L2-Norm: 1.232544405961982e-10
+Remaining L1-Norm: 6.223381290115608e-09
+Time elapsed: 418.14 mins

@@ -1,0 +1,168 @@
+\documentclass{article}
+
+\newcommand{\eq}[1]{Eq.~(\ref{#1})} %
+\newcommand{\sparen}[1]{\bigl(#1\bigr)} %
+\newcommand{\mparen}[1]{\bigl[#1\bigr]} %
+\newcommand{\fracpar}[2]{\frac{\partial #1}{\partial #2}} %
+\newcommand{\fracd}[2]{\frac{d #1}{d #2}} %
+\usepackage{amsmath} %
+\usepackage{times} %
+\usepackage{enumitem} %
+\usepackage{hyperref} %
+\usepackage{float} %
+\usepackage{graphicx} %
+\usepackage{tabularx} %
+\usepackage[dvipsnames,table]{xcolor} %
+\usepackage{listings} %
+\lstset{ frame=single, 
+ language=Python, 
+ breaklines=true,
+ basicstyle={\small\itshape},
+ numberstyle=\color{purple},
+ keywordstyle=\color{red},
+ stringstyle=\color{blue},
+}
+\usepackage{booktabs} %
+\hypersetup{
+    colorlinks = true,
+    linkcolor = magenta,
+} %
+\def\be{\begin{equation}} %
+\def\ee{\end{equation}} %
+\def\bea{\begin{eqnarray}} %
+\def\eea{\end{eqnarray}} %
+
+\begin{document}
+    RLF was used for grouping QWC and FC.
+    \begin{table}[h]%
+        \setlength\tabcolsep{0pt}
+        \caption{Groupings of full Hamiltonain (1 and 2 body terms). } 
+        {\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}} l l l l l l l l l l l}
+        \toprule
+        %  \hline\hline
+        Systems & $N$   & Total & QWC   & FC    & GFC & SVD& CSA & GCSA & VGCSA & VCSA\\
+        % \hline 
+        \midrule
+        H$_2$   & 4     & 15    & 3     & 2     & 2  & 4   & 3  & 3   & 3 & 3 \\
+        LiH     & 12    & 631   & 142   & 26    & 42 & 22  & 9  & 78  & 97 & ... \\
+        BeH$_2$ & 14    & 666   & 172   & 29    & 36 & 29  & 13 & 118 & 129 & ... \\
+        H$_2$O  & 14    & 1086  & 311   & 38    & 50 & 29  & 11 & 119 & 148 & ...\\
+        NH$_3$  & 16    & 3609  & 1262  & 121   & 122& 37  & 13 & 187 & 208 & ...\\
+        N$_2$   & ...   & ...   & ...   & ...   & 74 & 52 & ...& ... & ... & ...\\
+        \bottomrule
+        %\hline\hline
+        \end{tabular*} 
+        }
+        \label{tab:result}
+    \end{table}
+
+    \begin{table}[h]%
+        \setlength\tabcolsep{0pt}
+        \caption{FCI. $(\sum_i \sqrt{var_i} )^2$} 
+        {\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}l l l l l l l l l}
+            \toprule
+            %  \hline\hline
+            Systems & QWC   & FC    & GFC & SVD   & CSA & GCSA & VGCSA & VCSA\\
+            % \hline 
+            \midrule
+            H$_2$   & 0.14  & 0.14  & 0.14 & 0.14 & 0.12    & 0.14 & 0.14 & 0.14 \\
+            LiH     & 4.63  & 1.02  & 0.88 & 3.16 & 28.46   & 2.71 & 2.26 & 7 \\
+            BeH$_2$ & 14.78 & 3.68  & 1.11 & 1.86 & 24.64   & 1.47 & 0.851& 9 \\ 
+            H$_2$O  & 128.76& 25.97 & 7.59 & 58.48 & 388.73 & 49.4 & 46.2 & 100\\ 
+            NH$_3$  & 332.79& 53.60 & 18.8 & 58.07 & 402.28 & 47.0 & 42.2 & 100\\
+            N$_2$   & ...   & ...   & 8.83 & 10.5  & ...    & ...  & ...  & ...\\
+            \bottomrule
+            %\hline\hline
+            \end{tabular*} 
+        }
+        \label{tab:result}
+    \end{table}
+
+    \newpage
+
+    \begin{table}[h]%
+        \setlength\tabcolsep{0pt}
+        \caption{Groupings of full Hamiltonain (1 and 2 body terms). } 
+        {\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}l l l}
+            \toprule
+            %  \hline\hline
+            Systems & GCSA FC & GCSA CSA\\
+            % \hline 
+            \midrule
+            H$_2$   & 3 & 3  \\
+            LiH     & 71 & 24\\
+            BeH$_2$ & 61 & 27\\ 
+            H$_2$O  & 82 & 32\\
+            NH$_3$  & ... & 34\\  
+            N$_2$   & ... & ... \\            
+            \bottomrule
+            %\hline\hline
+            \end{tabular*} 
+        }
+        \label{tab:result}
+    \end{table}
+
+    \begin{table}[h]%
+        \setlength\tabcolsep{0pt}
+        \caption{FCI. $(\sum_i \sqrt{var_i} )^2$} 
+        {\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}l l l}
+            \toprule
+            %  \hline\hline
+            Systems & GCSA FC & GCSA CSA\\
+            % \hline
+            \midrule
+            H$_2$   & 0.14  & 0.14 \\
+            LiH     & 2.65  & 2.66 \\
+            BeH$_2$ & 1.45  & 1.34 \\ 
+            H$_2$O  & 50.57 & 49.8 \\ 
+            NH$_3$  & ...   & 47.8 \\
+            \bottomrule
+            %\hline\hline
+            \end{tabular*} 
+        }
+        \label{tab:result}
+    \end{table}
+
+    \newpage
+    \begin{table}[h]%
+        \setlength\tabcolsep{0pt}
+        \caption{FCI. $M \sum_{i=1}^M var_i $. Deprecated. } 
+        {\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}l l l l l l l}
+            \toprule
+            %  \hline\hline
+            Systems & QWC   & FC    & SVD   & CSA & GCSA FC & VGCSA \\
+            % \hline
+            \midrule
+            H$_2$   & 0.15 & 0.14 & 0.26 & 0.17          & 0.19     & \\
+            LiH     & 10.41 & 1.48 &  21.49 & 30.61      & 71.14    & \\
+            BeH$_2$ & 25.85 & 4.74 & 8.67 & 25.69        & 17.88    & \\ 
+            H$_2$O  & 434.38 & 46.72 & 625.90 & 441.66   & 1688.74  & \\ 
+            NH$_3$  & 1685.01 & 103.66 & 742.37 & 453.13 &          & \\
+            \bottomrule
+            %\hline\hline
+            \end{tabular*} 
+        }
+        \label{tab:result}
+    \end{table}
+
+    \begin{table}[h]%
+        \setlength\tabcolsep{0pt}
+        \caption{Energies} 
+        {\begin{tabular*}{\columnwidth}{@{\extracolsep{\fill}}l l l}
+            \toprule
+            %  \hline\hline
+            Systems & HF    & FCI   \\
+            % \hline
+            \midrule
+            H$_2$   & -1.0661& -1.1012 \\
+            LiH     & -7.7673 & -7.7845 \\
+            BeH$_2$ & -15.4557 & -15.4817 \\
+            H$_2$O  & -74.9630 & -75.0177 \\
+            NH$_3$  & -55.4523 & ... \\
+            \bottomrule
+            %\hline\hline
+            \end{tabular*} 
+        }
+        \label{tab:result}
+    \end{table}
+\end{document}

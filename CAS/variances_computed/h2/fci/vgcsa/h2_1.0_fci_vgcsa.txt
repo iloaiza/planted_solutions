@@ -1,0 +1,9 @@
+Molecule: h2
+Wavefunction: fci
+Geometries: 1.0
+Method: VGCSA
+Number of CSA fragments: 6
+
+Should be 0. H - \sum H_i: 0
+Optimal metric: 0.13599030644358015
+

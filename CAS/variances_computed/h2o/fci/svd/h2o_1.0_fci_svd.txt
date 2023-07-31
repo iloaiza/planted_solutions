@@ -1,0 +1,8 @@
+Molecule: h2o
+Wavefucntion: fci
+Geometries: 1.0
+Method: svd
+
+SVD parts - H_fermionic: 0
+Sum over sqrt: 7.646955826832752
+

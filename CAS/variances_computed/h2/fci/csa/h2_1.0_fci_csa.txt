@@ -1,0 +1,15 @@
+Molecule: h2
+Wavefucntion: fci
+Geometries: 1.0
+Method: csa
+
+H - CSA_H. Should be one_body terms:
+0.52917721092 [] +
+-1.522440721391221 [0^ 0] +
+-1.522440721391221 [1^ 1] +
+-1.014051668920105 [2^ 2] +
+-1.014051668920105 [3^ 3]
+
+CSA parts - H_fermionic: 0
+Sum over sqrt: 0.3509993751440861
+

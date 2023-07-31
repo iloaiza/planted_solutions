@@ -1,0 +1,8 @@
+Molecule: lih
+Wavefucntion: fci
+Geometries: 1.0
+Method: qwc
+
+QWC parts - H_bk: 0
+Sum over sqrt: 2.152444884977207
+

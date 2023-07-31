@@ -1,0 +1,8 @@
+Molecule: beh2
+Wavefucntion: fci
+Geometries: 1.0
+Method: qwc
+
+QWC parts - H_bk: 0
+Sum over sqrt: 3.844290467859527
+

@@ -1,0 +1,38 @@
+Date: 210621 
+Experiment: BeH2. alpha=[12 16], var_weight=0.05 
+Takeaway:
+    - Didn't finish. Try higher alpha. 
+
+Date: 210622 
+Experiment: BeH2. alpha=[16 20], var_weight=0.05 
+Takeaway: 
+    - Didn't finish. Try same alpha with different methods. 
+
+Date: 210711
+Experiment: BeH2. alpha=[12 16], var_weight=1e-4, grad=True  
+Takeaway:
+    - Some didn't finish 
+    - Squared norm near 1e-8. Not low enough 
+
+Date: 210724
+Experiment: BeH2. alpha=[12 16], var_weight=1e-6, grad=True
+Takeaway:
+    - Squared norm near 1e-10. Try lower 
+
+Date: 210725 
+Experiment: BeH2. alpha=[12 16], var_weight=1e-7, grad=True, maxiter=23000  
+Takeaway:
+     - L1 norm near 1e-05. Continue but next time try lower var_weight to go for 2.5e-06 
+
+Date: 210726
+Experiment: BeH2. alpha=[12 16], var_weight=1e-7, grad=True, maxiter=30000, reload=True 
+Takeaway:
+    - Same as lih. 
+
+# Updating VCSA to have GCSA after to deal w/ norm 
+Date: 210727 
+Experiment: BeH2. alpha=[12 16], var_weight=1e-2, grad=True, maxiter=30000, reload=False 
+Takeaway:
+    - Not much difference between alpha. 
+    - HF->FCI: 0.16 -> 10.8
+    - All horrible HF->FCI. Why? 

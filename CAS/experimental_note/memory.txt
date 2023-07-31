@@ -1,0 +1,12 @@
+Encountered memory issus when running GFC on N2. Didn't happen with SVD, why? 
+
+Traceback (most recent call last):
+  File "gfc_variance_compute.py", line 42, in <module>
+    _, psi = get_ground_state(get_sparse_operator(h_bk)) 
+  File "/home/i/izmaylov/tyen/.virtualenvs/qchem/lib/python3.6/site-packages/openfermion/linalg/sparse_tools.py", line 1259, in get_sparse_operator
+    return qubit_operator_sparse(operator, n_qubits)
+  File "/home/i/izmaylov/tyen/.virtualenvs/qchem/lib/python3.6/site-packages/openfermion/linalg/sparse_tools.py", line 201, in qubit_operator_sparse
+    shape=(n_hilbert, n_hilbert)).tocsc(copy=False)
+  File "/home/i/izmaylov/tyen/.virtualenvs/qchem/lib/python3.6/site-packages/scipy/sparse/coo.py", line 358, in tocsc
+    col = self.col.astype(idx_dtype, copy=False)
+MemoryError: Unable to allocate 23.0 GiB for an array with shape (3093299200,) and data type int64
