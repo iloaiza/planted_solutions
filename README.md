@@ -32,8 +32,8 @@ QM.save_frag(frag, SAVENAME, method)
 ```
 
 #### Planted solution methods
-Here we give a list of different methods for Hartree-Fock-solvable planted solutions:
-DF: largest fragment from double factorization 
-DF-boost: using the frame from the largest DF fragment, all number operators from the Hamiltonian are collected
-CSA: Cartan sub-algebra/greedy full rank decomposition using spacial orbitals, optimizes coefficients for both one-electron and two-electron tensors at the same time
+Here we give a list of different methods for Hartree-Fock-solvable planted solutions:<br>
+DF: largest fragment from double factorization <br>
+DF-boost: using the frame from the largest DF fragment, all number operators from the Hamiltonian are collected<br>
+CSA: Cartan sub-algebra/greedy full rank decomposition using spacial orbitals, optimizes coefficients for both one-electron and two-electron tensors at the same time<br>
 CAS: Complete Active Space decompositing using spin orbital basis, optimizes coefficients for both one-electron and two-electron tensors at the same time.
