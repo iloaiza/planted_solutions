@@ -41,3 +41,5 @@ def load_Hamiltonian(mol, k):
 
 if __name__ == "__main__":
     print(load_Hamiltonian("h2", [1,3]))
+    print(load_Hamiltonian("h2", [2,2]))
+    print(load_Hamiltonian("h4", [2,2,2,2]))
