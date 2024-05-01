@@ -82,3 +82,13 @@ def get_orthogonal_param(O, tol):
     fun = lambda x: ortho_cost(x, O)
     sol = optimize.minimize(fun, angs, tol=tol)
     return sol.x
+def construct_random_sz_unitary(n):
+    """Construct a random sz which preserve Sz Symmetry
+    """
+    m = np.zeros((n,n))
+    for i in range(n):
+        for j in range(i):
+            if i % 2 == j % 2:
+                m[i,j] = np.random.random()
+                m[j,i] = m[i,j]
+    return m
